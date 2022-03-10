@@ -138,147 +138,13 @@
         </div>
       </div>
 
-      <div class="row d-flex flex-md-row flex-column ">
-        
-          <div class="col-10 bg-danger d-flex  flex-md-row flex-column">
-              <form >
-                <div class="row col-12 d-flex flex-md-row flex-column mb-5 bg-info">
-                    <div class="select_parent col-3 form-group d-flex flex-column">
-                      <label for="renting">Renting</label>
-                      <select
-                        class="form-control options_bg"
-                        name="renting"
-                        id="renting"
-                      >
-                        <option value="select">Select</option>
-                        <option value="daily">Daily</option>
-                        <option value="monthly">Monthly</option>
-                      </select>
-                    </div>
-      
-                    <div class="select_parent col-3 form-group flex-column">
-                      <label for="city">City</label>
-                      <select
-                        class="form-control options_bg"
-                        class="form-control"
-                        name="city"
-                        id="city"
-                      >
-                        <option value="erevan">Erevan</option>
-                      </select>
-                    </div>
-      
-                    <div class="select_parent col-3 form-group flex-column">
-                      <label for="renting">Region</label>
-                      <select
-                        class="form-control options_bg"
-                        name="region"
-                        id="region"
-                      >
-                        <option value="avan">Avan</option>
-                        <option value="ajapnyak">Ajapnyak</option>
-                        <option value="arabkir">Arabkir</option>
-                        <option value="davtashen">Davtashen</option>
-                        <option value="erebuni">Erebuni</option>
-                        <option value="center">Center</option>
-                        <option value="malatia-sebastia">Malatia-Sebastia</option>
-                        <option value="nor-nork">Nor-Nork</option>
-                        <option value="nork-marash">Nork_marash</option>
-                        <option value="nubarashen">Nubarashen</option>
-                        <option value="shengavit">Shengavit</option>
-                        <option value="vahagni">Vahagni</option>
-                        <option value="kanaker-zeytun">Kanaker-Zeytun</option>
-                      </select>
-                    </div>
-      
-                    <div class="select_parent col-3 form-group flex-column">
-                      <label for="rooms">Rooms</label>
-                      <select class="form-control options_bg" name="rooms" id="rooms">
-                        <option value="studio-apt">StudioApt</option>
-                        <option value="bedroom-1">1 Bedroom</option>
-                        <option value="bedroom-2">2 Bedrooms</option>
-                        <option value="bedroom-3">3 Bedrooms</option>
-                        <option value="bedroom-4">4 Bedrooms</option>
-                        <option value="bedroom-5">5 Bedrooms</option>
-                        <option value="bedroom-6">6 Bedrooms</option>
-                        <option value="bedroom-7">7 Bedrooms+</option>
-                      </select>
-                    </div>
-                  </div>
-      
-                  <div
-                    class="row col-12 d-flex flex-md-row flex-column align-items-end mb-5 bg-info"
-                  >
-                    <div class="select_parent col-3 form-group flex-column">
-                      <label for="price">Price</label>
-      
-                      <input
-                        class="form-control options_bg"
-                        type="number"
-                        id="price"
-                        name="price"
-                        min="0"
-                        max="100"
-                        placeholder="$100"
-                      />
-                    </div>
-      
-                    <div class="select_parent col-3 form-group flex-column">
-                      <label for="price" id="price-second"></label>
-                      <input
-                        class="form-control options_bg"
-                        type="number"
-                        id="price-100"
-                        name="price-100"
-                        min="1"
-                        max="100"
-                        placeholder="$100"
-                      />
-                    </div>
-      
-                    <div class="select_parent col-3 form-group flex-column">
-                      <label for="code">Code</label>
-                      <input
-                        class="form-control options_bg"
-                        type="text"
-                        id="code"
-                        name="code"
-                        placeholder="RCEA3248"
-                      />
-                    </div>
-      
-                    <div class="select_parent col-3 form-group flex-column">
-                      <label for="layout">Layout</label>
-                      <select
-                        class="form-control options_bg"
-                        name="layout"
-                        id="layout"
-                      >
-                        <option value="special-project">Special Project</option>
-                        <option value="new-building">New Building</option>
-                        <option value="post-khrushchev-project">
-                          Post Khrushchev project
-                        </option>
-                        <option value="stalin-project">Stalin Project</option>
-                      </select>
-                    </div>
-                  </div>
-
-              </form>
-            
-          </div>
-
-          <div class="col-2 bg-warning">
-              <form >
-                <button type="submit" class="btn btn-primary mb-2">search</button>
-              </form>
-            
-          </div>
-        
-
-        <!-- <form>
-            <div class="row col-12 d-flex flex-md-row flex-column mb-5 bg-info">
-              <div class="select_parent col-3 form-group d-flex flex-column">
+      <div class="row d-flex flex-column flex-md-row">
+        <div class="col-10 bg-danger">
+          <form>
+            <div class="row bg-success form_row">
+              <div
+                class="select_parent col-6 col-md-3 form-group d-flex flex-column"
+              >
                 <label for="renting">Renting</label>
                 <select
                   class="form-control options_bg"
@@ -291,7 +157,7 @@
                 </select>
               </div>
 
-              <div class="select_parent col-3 form-group flex-column">
+              <div class="select_parent col-6 col-md-3 form-group flex-column">
                 <label for="city">City</label>
                 <select
                   class="form-control options_bg"
@@ -303,7 +169,7 @@
                 </select>
               </div>
 
-              <div class="select_parent col-3 form-group flex-column">
+              <div class="select_parent col-6 col-md-3 form-group flex-column">
                 <label for="renting">Region</label>
                 <select
                   class="form-control options_bg"
@@ -326,7 +192,7 @@
                 </select>
               </div>
 
-              <div class="select_parent col-3 form-group flex-column">
+              <div class="select_parent col-6 col-md-3 form-group flex-column">
                 <label for="rooms">Rooms</label>
                 <select class="form-control options_bg" name="rooms" id="rooms">
                   <option value="studio-apt">StudioApt</option>
@@ -343,14 +209,73 @@
           </form>
 
           <form>
-           
-          </form> -->
+            <div class="row bg-info align-items-end form_row">
+              <div class="select_parent col-6 col-md-3 form-group flex-column">
+                <label for="price">Price</label>
+
+                <input
+                  class="form-control options_bg"
+                  type="number"
+                  id="price"
+                  name="price"
+                  min="0"
+                  max="100"
+                  placeholder="$100"
+                />
+              </div>
+
+              <div class="select_parent col-6 col-md-3 form-group flex-column">
+                <label for="price" id="price-second"></label>
+                <input
+                  class="form-control options_bg"
+                  type="number"
+                  id="price-100"
+                  name="price-100"
+                  min="1"
+                  max="100"
+                  placeholder="$100"
+                />
+              </div>
+
+              <div class="select_parent col-6 col-md-3 form-group flex-column">
+                <label for="code">Code</label>
+                <input
+                  class="form-control options_bg"
+                  type="text"
+                  id="code"
+                  name="code"
+                  placeholder="RCEA3248"
+                />
+              </div>
+
+              <div class="select_parent col-6 col-md-3 form-group flex-column">
+                <label for="layout">Layout</label>
+                <select
+                  class="form-control options_bg"
+                  name="layout"
+                  id="layout"
+                >
+                  <option value="special-project">Special Project</option>
+                  <option value="new-building">New Building</option>
+                  <option value="post-khrushchev-project">
+                    Post Khrushchev project
+                  </option>
+                  <option value="stalin-project">Stalin Project</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-2 bg-warning">
+          <div class="row">
+            <form class="bg-danger some w-100">
+              <button type="submit" class="btn btn-primary">search</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- Form section  -->
-
-    <!-- Form section end  -->
 
     <!-- Main section end  -->
 
