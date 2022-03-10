@@ -55,8 +55,6 @@ body {
   color: var(--orange) !important;
 }
 
-
-
 /* Main container  */
 
 #main_img > img {
@@ -89,14 +87,23 @@ body {
 }
 
 .page_btn {
-  width: 25%;
+  width: 120px;
   border-radius: 50px;
   font-weight: bold;
   font-size: 13px;
 }
 
 
+
+
+
+
 /* Page footer  */
+
+.footer_left{
+  padding: 0;
+
+}
 
 #footer ul {
   list-style: none;
@@ -110,8 +117,8 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-  div[ class *= "_list_div"] {
-    display: none;
+  .footer_list {
+    display: none !important;
   }
 }
 span {
