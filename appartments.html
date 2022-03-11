@@ -24,12 +24,6 @@
     <!-- Ejy amen 30 vayrkyan@ mek tarmacnelu tag  -->
     <!-- <meta http-equiv="refresh" content="30" /> -->
 
-    <!-- font awesome link data-search-pseudo-elements defer-->
-    <script
-      src="https://kit.fontawesome.com/e8a3ccd4f0.js"
-      crossorigin="anonymous"
-    ></script>
-
     <!-- Bootsrap link  -->
     <link
       rel="stylesheet"
@@ -37,6 +31,12 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+
+    <!-- font awesome link data-search-pseudo-elements defer-->
+    <script
+      src="https://kit.fontawesome.com/e8a3ccd4f0.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="css/style1.css" />
@@ -59,8 +59,8 @@
           <div class="col-lg-3 col-md-12" id="header_left">
             <img src="/img/elate logo.png " alt="Logo" />
           </div>
-          <div class="col-lg-9 col-md-12" id="header_right">
-            <nav class="navbar navbar-expand-lg navbar-light menu_nav">
+          <div class="col-lg-9 col-md-12 " id="header_right">
+            <nav class=" header_nav navbar navbar-expand-lg navbar-light menu_nav">
               <button
                 class="navbar-toggler"
                 type="button"
@@ -115,35 +115,43 @@
 
     <!-- Main section  -->
     <div class="container">
-      <div class="row">
-        <div
-          class="wrapper_list_row col-md-6 col-sm-12 d-flex align-items-center justify-content-md-start justify-content-sm-center justify-content-center"
-        >
-          <p>Apartments</p>
-          <p>Houses</p>
-          <p>Commercial</p>
-        </div>
-        <div
-          class="wrapper_list_row col-md-6 col-sm-12 d-flex align-items-center justify-content-md-end justify-content-sm-center justify-content-center top_currency"
-        >
-          <p>For Rent</p>
-          <p>For Sale</p>
-          <div class="currency_box">
-            <select class="form-control-sm" id="currency_select">
-              <option value="usd">USD</option>
-              <option value="eur">EUR</option>
-              <option value="amd">AMD</option>
-            </select>
+
+
+      <div class="container">
+        <div class="row my-5">
+
+          <div
+            class="wrapper_list_row col-12 col-md-6 d-flex align-items-center justify-content-md-start justify-content-sm-center justify-content-center"
+          >
+            <p class="top_active ">Apartments</p>
+            <p>Houses</p>
+            <p>Commercial</p>
           </div>
+  
+          <div
+            class="wrapper_list_row col-12 col-md-6 d-flex align-items-center justify-content-md-end justify-content-sm-center justify-content-center top_currency"
+          >
+            <p class="top_active">For Rent</p>
+            <p>For Sale</p>
+            <div class="currency_box">
+              <select class="form-control-sm" id="currency_select">
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="amd">AMD</option>
+              </select>
+            </div>
+          </div>
+          
         </div>
       </div>
+      
 
-      <div class="row d-flex flex-column flex-md-row">
-        <div class="col-10 bg-danger">
-          <form>
-            <div class="row bg-success form_row">
+      <form  action="#">
+        <div class="row d-flex flex-column flex-md-row">
+          <div class="col-12 col-md-10">
+            <div class="row form_row">
               <div
-                class="select_parent col-6 col-md-3 form-group d-flex flex-column"
+                class="select_parent col-6 col-md-3 mb-2 form-group d-flex flex-column"
               >
                 <label for="renting">Renting</label>
                 <select
@@ -157,7 +165,9 @@
                 </select>
               </div>
 
-              <div class="select_parent col-6 col-md-3 form-group flex-column">
+              <div
+                class="select_parent col-6 col-md-3 mb-2 form-group flex-column"
+              >
                 <label for="city">City</label>
                 <select
                   class="form-control options_bg"
@@ -169,7 +179,9 @@
                 </select>
               </div>
 
-              <div class="select_parent col-6 col-md-3 form-group flex-column">
+              <div
+                class="select_parent col-6 col-md-3 mb-2 form-group flex-column"
+              >
                 <label for="renting">Region</label>
                 <select
                   class="form-control options_bg"
@@ -192,7 +204,9 @@
                 </select>
               </div>
 
-              <div class="select_parent col-6 col-md-3 form-group flex-column">
+              <div
+                class="select_parent col-6 col-md-3 mb-2 form-group flex-column"
+              >
                 <label for="rooms">Rooms</label>
                 <select class="form-control options_bg" name="rooms" id="rooms">
                   <option value="studio-apt">StudioApt</option>
@@ -206,11 +220,11 @@
                 </select>
               </div>
             </div>
-          </form>
 
-          <form>
-            <div class="row bg-info align-items-end form_row">
-              <div class="select_parent col-6 col-md-3 form-group flex-column">
+            <div class="row align-items-end form_row">
+              <div
+                class="select_parent col-6 col-md-3 mb-2 form-group flex-column"
+              >
                 <label for="price">Price</label>
 
                 <input
@@ -224,7 +238,9 @@
                 />
               </div>
 
-              <div class="select_parent col-6 col-md-3 form-group flex-column">
+              <div
+                class="select_parent col-6 col-md-3 mb-2 form-group flex-column"
+              >
                 <label for="price" id="price-second"></label>
                 <input
                   class="form-control options_bg"
@@ -237,7 +253,9 @@
                 />
               </div>
 
-              <div class="select_parent col-6 col-md-3 form-group flex-column">
+              <div
+                class="select_parent col-6 col-md-3 mb-2 form-group flex-column"
+              >
                 <label for="code">Code</label>
                 <input
                   class="form-control options_bg"
@@ -248,7 +266,9 @@
                 />
               </div>
 
-              <div class="select_parent col-6 col-md-3 form-group flex-column">
+              <div
+                class="select_parent col-6 col-md-3 mb-2 form-group flex-column"
+              >
                 <label for="layout">Layout</label>
                 <select
                   class="form-control options_bg"
@@ -264,14 +284,163 @@
                 </select>
               </div>
             </div>
-          </form>
+          </div>
+
+          <div
+            class="col-12 col-md-2 mt-2 mt-md-4 d-flex justify-content-center align-items-start"
+          >
+            <div class="row">
+              <button type="submit" class="btn btn-warning search_btn">
+                search
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-md-flex info_section my-5">
+            <div class="col-12 col-md-6 mb-5 mb-md-0">
+              <img src="img/appartmentsImg/room 1.jfif" alt="Rooms" />
+            </div>
+
+            <div class="col-12 col-md-6 d-flex align-items-center">
+              <div class="row">
+                <div class="col-12">
+                  <h5 class="card_title">
+                    Bayron <span>Yerevan / Centre</span>
+                  </h5>
+                  <div class="row">
+                    <div class="col-3">
+                      <ul class="list-unstyled card_list">
+                        <li><span>Features</span></li>
+                        <li>5/3 Floor</li>
+                        <li>200sqm</li>
+                        <li>New Building</li>
+                      </ul>
+                    </div>
+                    <div class="col-3">
+                      <ul class="list-unstyled card_list">
+                        <li><span id="monthly">Monthly</span></li>
+                        <li><span id="monthly_price">2900 USD</span></li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+                      <ul class="list-unstyled card_list">
+                        <li>
+                          <span>Code:</span> <span id="code">RCEA3248</span>
+                        </li>
+                        <li>
+                          <span id="update"> Updated: <span id="date"> 14.06.2021 </span> </span>
+                          
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 d-flex justify-content-md-end">
+                  <a href="#" class="btn btn-warning text-right buy">BUY</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 d-md-flex info_section my-5">
+            <div class="col-12 col-md-6 mb-5 mb-md-0">
+              <img src="img/appartmentsImg/room 2.jfif" alt="Rooms" />
+            </div>
+
+            <div class="col-12 col-md-6 d-flex align-items-center">
+              <div class="row">
+                <div class="col-12">
+                  <h5 class="card_title">
+                    Teryan <span>Yerevan / Centre</span>
+                  </h5>
+                  <div class="row">
+                    <div class="col-3">
+                      <ul class="list-unstyled card_list">
+                        <li><span>Features</span></li>
+                        <li>5/3 Floor</li>
+                        <li>200sqm</li>
+                        <li>New Building</li>
+                      </ul>
+                    </div>
+                    <div class="col-3">
+                      <ul class="list-unstyled card_list">
+                        <li><span id="monthly">Monthly</span></li>
+                        <li><span id="monthly_price">1200 USD</span></li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+                      <ul class="list-unstyled card_list">
+                        <li>
+                          <span>Code:</span> <span id="code">RCEA3248</span>
+                        </li>
+                        <li>
+                          <span id="update"> Updated: <span id="date"> 14.06.2021 </span> </span>
+                          
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 d-flex justify-content-md-end">
+                  <a href="#" class="btn btn-warning text-right buy">BUY</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="col-2 bg-warning">
-          <div class="row">
-            <form class="bg-danger some w-100">
-              <button type="submit" class="btn btn-primary">search</button>
-            </form>
+        <div class="row">
+          <div class="col-12 d-md-flex info_section my-5">
+            <div class="col-12 col-md-6 mb-5 mb-md-0">
+              <img src="img/appartmentsImg/room 3.jpg" alt="Rooms" />
+            </div>
+
+            <div class="col-12 col-md-6 d-flex align-items-center">
+              <div class="row">
+                <div class="col-12">
+                  <h5 class="card_title">
+                    Abovyan <span>Yerevan / Centre</span>
+                  </h5>
+                  <div class="row">
+                    <div class="col-3">
+                      <ul class="list-unstyled card_list">
+                        <li><span>Features</span></li>
+                        <li>5/3 Floor</li>
+                        <li>200sqm</li>
+                        <li>New Building</li>
+                      </ul>
+                    </div>
+                    <div class="col-3">
+                      <ul class="list-unstyled card_list">
+                        <li><span id="monthly">Monthly</span></li>
+                        <li><span id="monthly_price">1500 USD</span></li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+                      <ul class="list-unstyled card_list">
+                        <li>
+                          <span>Code:</span> <span id="code">RCEA3248</span>
+                        </li>
+                        <li>
+                          <span id="update"> Updated: <span id="date"> 14.06.2021 </span> </span>
+                          
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 d-flex justify-content-md-end">
+                  <a href="#" class="btn btn-warning text-right buy">BUY</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -279,47 +448,47 @@
 
     <!-- Main section end  -->
 
-    <!-- <div class="container-fluid" id="footer">
+
+    <!-- Page footer  -->
+    <div class="container-fluid" id="footer">
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-2">
             <div class="footer_logo py-5">
-              <img src="/img/elate logo.png" alt="Logo" />
+              <img src="img/elate logo.png" alt="Logo" />
               <p>Professional Approach</p>
             </div>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-md-7 col-sm-12">
-            <div class="row no-gutters">
-              <div class="col-md-4 col-sm-12">
-                <ul id="footer_lf_list">
-                  <li><span>Tel:</span> 374 10 53 00 73</li>
-                  <li><span>Mob:</span> 374 77 04 04 46</li>
-                  <li><span>Email:</span> info@elate.am</li>
-                </ul>
-              </div>
+          <div class="col-md-6 col-sm-12 d-flex footer_left">
+            <div class="col-lg-4 col-md-12">
+              <ul class="footer_first_list">
+                <li><span>Tel:</span> 374 10 53 00 73</li>
+                <li><span>Mob:</span> 374 77 04 04 46</li>
+                <li><span>Email:</span> info@elate.am</li>
+              </ul>
+            </div>
 
-              <div class="center_list_div col-md-4">
-                <ul id="footer_center_list">
-                  <li>Home</li>
-                  <li>Real Estate</li>
-                  <li>Our Services</li>
-                </ul>
-              </div>
-              <div class="right_list_div col-md-4">
-                <ul id="footer_center_list">
-                  <li>Contact Us</li>
-                  <li>About Us</li>
-                  <li>Armenia</li>
-                </ul>
-              </div>
+            <div class="col-lg-4 d-flex justify-content-end footer_list">
+              <ul id="footer_center_list">
+                <li>Home</li>
+                <li>Real Estate</li>
+                <li>Our Services</li>
+              </ul>
+            </div>
+            <div class="col-lg-4 d-flex justify-content-end footer_list">
+              <ul>
+                <li>Contact Us</li>
+                <li>About Us</li>
+                <li>Armenia</li>
+              </ul>
             </div>
           </div>
 
           <div
-            class="col-md-5 col-sm-12 d-flex flex-column justify-content-end footer-right"
+            class="col-md-6 col-sm-12 d-flex flex-column justify-content-end align-items-start align-items-lg-end footer-right"
           >
             <div class="row footer_social">
               <ul class="d-flex">
@@ -366,7 +535,7 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
