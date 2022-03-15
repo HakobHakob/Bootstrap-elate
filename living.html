@@ -24,12 +24,6 @@
     <!-- Ejy amen 30 vayrkyan@ mek tarmacnelu tag  -->
     <!-- <meta http-equiv="refresh" content="30" /> -->
 
-    <!-- font awesome link data-search-pseudo-elements defer-->
-    <script
-      src="https://kit.fontawesome.com/e8a3ccd4f0.js"
-      crossorigin="anonymous"
-    ></script>
-
     <!-- Bootsrap link  -->
     <link
       rel="stylesheet"
@@ -38,8 +32,14 @@
       crossorigin="anonymous"
     />
 
+    <!-- font awesome link data-search-pseudo-elements defer-->
+    <script
+      src="https://kit.fontawesome.com/e8a3ccd4f0.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style2.css" />
 
     <!-- Google font style link  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -49,19 +49,19 @@
       rel="stylesheet"
     />
 
-    <title>Task 1 Bootstrap</title>
+    <title>Task 3 Bootstrap</title>
   </head>
 
   <body>
     <div class="container-fluid" id="header">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-lg-3 ">
+          <div class="col-12 col-lg-3">
             <img src="img/elate logo.png " alt="Logo" />
           </div>
-          <div class="col-12 col-lg-9 ">
+          <div class="col-12 col-lg-9">
             <nav
-              class="header_nav navbar navbar-expand-lg navbar-light menu_nav "
+              class="header_nav navbar navbar-expand-lg navbar-light menu_nav"
             >
               <button
                 class="navbar-toggler"
@@ -115,107 +115,197 @@
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="row" id="main_img">
-        <img src="img/mainPageImg/image1.png" alt="Main Image" />
+    <!-- Main section  -->
+
+    <div class="container">
+      <div class="row main_row">
+        <div class="info_div col-12 col-md-6">
+          <h3>Bayron <span> / RSEA3248</span></h3>
+          <p>3 Bedrooms - 5/3 Floor - 200sqm - New Building</p>
+        </div>
+
+        <div
+          class="col-md-6 d-flex flex-column align-items-md-end justify-content-end"
+        >
+          <p class="monthly">Monthly</p>
+          <p class="price">2.982 USD</p>
+        </div>
       </div>
     </div>
 
-    <div class="container wrapper_title_section">
-      <p class="wrapper_title">
-        Welcome to our new real estate website. Looking to rent or buy an
-        apartment, house, office space or other commercial real estate, we are
-        dedicated to provide excellent customer service to exceed our customers’
-        expectations.
-      </p>
-    </div>
-
-    <div class="container mb-5">
+    <!-- Carousel part  -->
+    <div class="container">
       <div class="row">
         <div
-          class="apartments_img col-md-6 col-sm-12 d-flex justify-content-center"
+          id="carouselExampleIndicators"
+          class="big_carousel carousel slide"
+          data-ride="carousel"
         >
-          <img src="img/mainPageImg/image2.png" alt="Image" />
-        </div>
-        <div
-          class="apartments_info col-md-5 offset-md-1 col-sm-12 mt-5 mt-md-0 d-flex flex-column justify-content-center"
-        >
-          <h5>Apartments</h5>
-
-          <p class="info_txt">
-            Welcome to our new real estate website. Looking to rent or buy an
-            apartment, house, office space or other commercial real estate, we
-            are dedicated to provide excellent customer service to exceed our
-            customers’ expectations. Apartments
-          </p>
-
-          <button type="button" class="btn btn-warning page_btn">
-            SEE MORE
-          </button>
-        </div>
-      </div>
-
-      <div class="row flex-row-reverse my-5">
-        <div
-          class="apartments_img col-md-6 col-sm-12 offset-md-1 d-flex justify-content-center"
-        >
-          <img src="img/mainPageImg/image2.png" alt="Image" />
-        </div>
-
-        <div
-          class="apartments_info col-md-5 col-sm-12 mt-5 mt-md-0 d-flex flex-column justify-content-center"
-        >
-          <h5>Houses</h5>
-
-          <p class="info_txt">
-            Welcome to our new real estate website. Looking to rent or buy an
-            apartment, house, office space or other commercial real estate.
-          </p>
-
-          <button type="button" class="btn btn-warning page_btn">
-            SEE MORE
-          </button>
-        </div>
-      </div>
-
-      <div class="row">
-        <div
-          class="apartments_img col-md-6 col-sm-12 d-flex justify-content-center"
-        >
-          <img src="img/mainPageImg/image2.png" alt="Image" />
-        </div>
-        <div
-          class="apartments_info col-md-5 offset-md-1 col-sm-12 mt-5 mt-md-0 d-flex flex-column justify-content-center"
-        >
-          <h5>Office Space</h5>
-
-          <p class="info_txt">
-            Welcome to our new real estate website. Looking to rent or buy an
-            apartment, house, office space or other commercial real estate, we
-            are dedicated to provide excellent customer service to exceed our
-            customers’ expectations.
-          </p>
-
-          <button type="button" class="btn btn-warning page_btn">
-            SEE MORE
-          </button>
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100"
+                src="img/living/living-room-1.jpg"
+                alt="Second slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="img/living/living-room-2.jfif"
+                alt="Third slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="img/living/living-room-3.jpg"
+                alt="Third slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="img/living/living-room-4.jpg"
+                alt="Third slide"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="img/living/Living-room-5.jpg"
+                alt="Third slide"
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
     </div>
 
+    <!-- Map and Video row  -->
+
+    <div class="container">
+      <div class="row">
+        <form class="d-flex" action="#">
+          <div class="map_video_selects col-7">
+            <select name="maps">
+              <option value="map">Map</option>
+            </select>
+          </div>
+          <div class=" map_video_selects col-1">
+            <select name="videos">
+              <option value="video">Video</option>
+            </select>
+          </div>
+        </form>
+      </div>
+
+      <!-- <div class="row">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.3939216365065!2d44.52260701525011!3d40.178046079393695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abcee3fabd121%3A0xfa78d0187ee98811!2zNyDUsdWs1aXWhCDVhNWh1bbVuNaC1a_VtdWh1bYg1oPVuNWy1bjWgSwg1LXWgNaH1aHVtiAwMDcwLCDVgNWh1bXVodW91b_VodW2!5e0!3m2!1shy!2s!4v1647329395534!5m2!1shy!2s"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="row">
+        <iframe
+          class="video"
+          width="100%"
+          height="450"
+          src="https://www.youtube.com/embed/GV92IdMGFfA"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div> -->
+    </div>
+
+    <!-- Main section bottom  -->
+    <div class="container shadowed_row">
+      <div class="bg-warning info-title  col-4 col-md-3 d-flex justify-content-md-center align-items-center">Features</div>
+      
+      <div class="row ">
+            <div class="info_section bg-info  col-4 col-md-3 d-flex mx-auto">
+              <ul class="some1 list-unstyled bg-danger ">
+                <li>New Repaired</li>
+                <li>Partly Furnished</li>
+                <li>Monolith Building</li>
+                <li>Open Balcony</li>
+                <li>Street View</li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-3  d-flex justify-content-md-end">
+              <ul class="list-unstyled ">
+                <li>1.5 bathrooms</li>
+                <li>Air Conditioners</li>
+                <li>Centralized Heating System</li>
+              </ul>
+            </div>
+            <div class="col-4 col-md-3  d-flex justify-content-md-end">
+              <ul class="list-unstyled">
+                <li>Euro Windows</li>
+                <li>Wooden doors</li>
+                <li>Parquet Floor</li>
+                <li>Double Curtains</li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-3  d-flex justify-content-md-end">
+              <ul class="list-unstyled">
+                <li>New Elevator</li>
+                <li>Street Entrance</li>
+                <li>Security Guards</li>
+                <li>Underground Parking</li>
+                <li>Daily Garbage Pick Up</li>
+              </ul>
+            </div>
+      </div>
+    </div>
+
+    <!-- Main section end  -->
 
     <!-- Page footer  -->
     <div class="container-fluid" id="footer">
       <div class="container">
-            <div class="footer_logo py-5">
-              <img src="img/elate logo.png" alt="Logo" />
-              <p>Professional Approach</p>
-            </div>
-          
-        
+        <div class="footer_logo py-5">
+          <img src="img/elate logo.png" alt="Logo" />
+          <p>Professional Approach</p>
+        </div>
 
-        <div class="row ">
-          
+        <div class="row">
           <div class="col-md-6 col-12 d-flex footer_left">
             <div class="col-lg-4 col-md-12">
               <ul class="footer_first_list">
@@ -242,9 +332,9 @@
           </div>
 
           <div
-            class="col-md-6 col-12 d-flex flex-column justify-content-end align-items-start align-items-lg-end "
+            class="col-md-6 col-12 d-flex flex-column justify-content-end align-items-start align-items-lg-end"
           >
-            <div class=" footer_social">
+            <div class="footer_social">
               <ul class="d-flex">
                 <li>
                   <a href="http://#" target="_blank" rel="noopener noreferrer">
@@ -287,10 +377,6 @@
               <p>All rights reserved © 2021 Elate Real Estate</p>
             </div>
           </div>
-
-
-
-
         </div>
       </div>
     </div>

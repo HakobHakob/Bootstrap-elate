@@ -56,11 +56,13 @@
     <div class="container-fluid" id="header">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-12" id="header_left">
+          <div class="col-12 col-lg-3 ">
             <img src="img/elate logo.png " alt="Logo" />
           </div>
-          <div class="col-lg-9 col-md-12 " id="header_right">
-            <nav class=" header_nav navbar navbar-expand-lg navbar-light menu_nav">
+          <div class="col-12 col-lg-9 ">
+            <nav
+              class="header_nav navbar navbar-expand-lg navbar-light menu_nav "
+            >
               <button
                 class="navbar-toggler"
                 type="button"
@@ -115,38 +117,59 @@
 
     <!-- Main section  -->
     <div class="container">
+      <div class="row my-5">
+        <div
+          class="wrapper_list_row col-12 col-md-6 mb-5 mb-md-0 d-flex align-items-center justify-content-center justify-content-md-start justify-content-sm-center"
+        >
+          <ul class="wrapper_list_ul list-unstyled d-flex align-items-center">
+            <li class="top_active_left">
+              <a href="http://#" target="_blank" rel="noopener noreferrer">
+                Apartments</a
+              >
+            </li>
+            <li>
+              <a href="http://#" target="_blank" rel="noopener noreferrer">
+                Houses</a
+              >
+            </li>
+            <li>
+              <a href="http://#" target="_blank" rel="noopener noreferrer"
+                >Commercial</a
+              >
+            </li>
+          </ul>
+        </div>
 
-
-      <div class="container">
-        <div class="row my-5">
-
-          <div
-            class="wrapper_list_row col-12 col-md-6 d-flex align-items-center justify-content-md-start justify-content-sm-center justify-content-center"
-          >
-            <p class="top_active ">Apartments</p>
-            <p>Houses</p>
-            <p>Commercial</p>
-          </div>
-  
-          <div
-            class="wrapper_list_row col-12 col-md-6 d-flex align-items-center justify-content-md-end justify-content-sm-center justify-content-center top_currency"
-          >
-            <p class="top_active">For Rent</p>
-            <p>For Sale</p>
-            <div class="currency_box">
-              <select class="form-control-sm" id="currency_select">
-                <option value="usd">USD</option>
-                <option value="eur">EUR</option>
-                <option value="amd">AMD</option>
-              </select>
-            </div>
-          </div>
-          
+        <div
+          class="wrapper_list_row col-12 col-md-6 d-flex align-items-center justify-content-md-end justify-content-sm-center justify-content-center top_currency"
+        >
+          <ul class="wrapper_list_ul list-unstyled d-flex align-items-center">
+            <li class="top_active_right">
+              <a href="http://#" target="_blank" rel="noopener noreferrer"
+                >For Rent</a
+              >
+            </li>
+            <li>
+              <a href="http://#" target="_blank" rel="noopener noreferrer"
+                >For Sale</a
+              >
+            </li>
+            <li>
+              <a href="http://#" target="_blank" rel="noopener noreferrer">
+                <div class="currency_box">
+                  <select class="form-control-sm" id="currency_select">
+                    <option value="usd">USD</option>
+                    <option value="eur">EUR</option>
+                    <option value="amd">AMD</option>
+                  </select>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      
 
-      <form  action="#">
+      <form action="#" class="big_form">
         <div class="row d-flex flex-column flex-md-row">
           <div class="col-12 col-md-10">
             <div class="row form_row">
@@ -297,172 +320,225 @@
           </div>
         </div>
       </form>
+
       <div class="container">
-        <div class="row">
-          <div class="col-12 d-md-flex info_section my-5">
-            <div class="col-12 col-md-6 mb-5 mb-md-0">
-              <img src="img/appartmentsImg/room 1.jfif" alt="Rooms" />
-            </div>
+        <div class="row info_row">
+          <div class="col-12 col-md-6 d-md-flex info_section">
+            <img src="img/appartmentsImg/room 1.jfif" alt="Rooms" />
+          </div>
 
-            <div class="col-12 col-md-6 d-flex align-items-center">
-              <div class="row">
-                <div class="col-12">
-                  <h5 class="card_title">
-                    Bayron <span>Yerevan / Centre</span>
-                  </h5>
-                  <div class="row">
-                    <div class="col-3">
-                      <ul class="list-unstyled card_list">
-                        <li><span>Features</span></li>
-                        <li>5/3 Floor</li>
-                        <li>200sqm</li>
-                        <li>New Building</li>
-                      </ul>
-                    </div>
-                    <div class="col-3">
-                      <ul class="list-unstyled card_list">
-                        <li><span id="monthly">Monthly</span></li>
-                        <li><span id="monthly_price">2900 USD</span></li>
-                      </ul>
-                    </div>
-                    <div class="col-6">
-                      <ul class="list-unstyled card_list">
-                        <li>
-                          <span>Code:</span> <span id="code">RCEA3248</span>
-                        </li>
-                        <li>
-                          <span id="update"> Updated: <span id="date"> 14.06.2021 </span> </span>
-                          
-                        </li>
-                      </ul>
-                    </div>
+          <div
+            class="col-12 col-md-6 d-flex align-items-center justify-content-md-center justify-content-start my-3"
+          >
+            <div class="row">
+              <div class="col-12">
+                <h5 class="card_title">Bayron <span>Yerevan / Centre</span></h5>
+                <div class="row">
+                  <div class="col-4">
+                    <ul class="list-unstyled card_list">
+                      <li><span>Features</span></li>
+                      <li>5/3 Floor</li>
+                      <li>200sqm</li>
+                      <li>New Building</li>
+                    </ul>
                   </div>
-                </div>
-
-                <div class="col-12 d-flex justify-content-md-end">
-                  <a href="#" class="btn btn-warning text-right buy">BUY</a>
+                  <div class="col-4">
+                    <ul class="list-unstyled card_list">
+                      <li id="monthly"><span >Monthly</span></li>
+                      <li id="monthly_price"><span >2900 USD</span></li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <ul class="list-unstyled card_list">
+                      <li id="code">
+                        Code: <span> RCEA3248 </span> 
+                      </li>
+                      <li>
+                        <span id="update">
+                          Updated: <span > 14.06.2021 </span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 d-md-flex info_section my-5">
-            <div class="col-12 col-md-6 mb-5 mb-md-0">
-              <img src="img/appartmentsImg/room 2.jfif" alt="Rooms" />
-            </div>
 
-            <div class="col-12 col-md-6 d-flex align-items-center">
-              <div class="row">
-                <div class="col-12">
-                  <h5 class="card_title">
-                    Teryan <span>Yerevan / Centre</span>
-                  </h5>
-                  <div class="row">
-                    <div class="col-3">
-                      <ul class="list-unstyled card_list">
-                        <li><span>Features</span></li>
-                        <li>5/3 Floor</li>
-                        <li>200sqm</li>
-                        <li>New Building</li>
-                      </ul>
-                    </div>
-                    <div class="col-3">
-                      <ul class="list-unstyled card_list">
-                        <li><span id="monthly">Monthly</span></li>
-                        <li><span id="monthly_price">1200 USD</span></li>
-                      </ul>
-                    </div>
-                    <div class="col-6">
-                      <ul class="list-unstyled card_list">
-                        <li>
-                          <span>Code:</span> <span id="code">RCEA3248</span>
-                        </li>
-                        <li>
-                          <span id="update"> Updated: <span id="date"> 14.06.2021 </span> </span>
-                          
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 d-flex justify-content-md-end">
-                  <a href="#" class="btn btn-warning text-right buy">BUY</a>
-                </div>
+              <div class="col-12 d-flex justify-content-md-end">
+                <a href="#" class="btn btn-warning text-right buy">BUY</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-12 d-md-flex info_section my-5">
-            <div class="col-12 col-md-6 mb-5 mb-md-0">
-              <img src="img/appartmentsImg/room 3.jpg" alt="Rooms" />
-            </div>
+        <div class="row info_row">
+          <div class="col-12 col-md-6 d-md-flex info_section">
+            <img src="img/appartmentsImg/room 2.jfif" alt="Rooms" />
+          </div>
 
-            <div class="col-12 col-md-6 d-flex align-items-center">
-              <div class="row">
-                <div class="col-12">
-                  <h5 class="card_title">
-                    Abovyan <span>Yerevan / Centre</span>
-                  </h5>
-                  <div class="row">
-                    <div class="col-3">
-                      <ul class="list-unstyled card_list">
-                        <li><span>Features</span></li>
-                        <li>5/3 Floor</li>
-                        <li>200sqm</li>
-                        <li>New Building</li>
-                      </ul>
-                    </div>
-                    <div class="col-3">
-                      <ul class="list-unstyled card_list">
-                        <li><span id="monthly">Monthly</span></li>
-                        <li><span id="monthly_price">1500 USD</span></li>
-                      </ul>
-                    </div>
-                    <div class="col-6">
-                      <ul class="list-unstyled card_list">
-                        <li>
-                          <span>Code:</span> <span id="code">RCEA3248</span>
-                        </li>
-                        <li>
-                          <span id="update"> Updated: <span id="date"> 14.06.2021 </span> </span>
-                          
-                        </li>
-                      </ul>
-                    </div>
+          <div
+            class="col-12 col-md-6 d-flex align-items-center justify-content-md-center justify-content-start my-3"
+          >
+            <div class="row">
+              <div class="col-12">
+                <h5 class="card_title">Teryan <span>Yerevan / Centre</span></h5>
+                <div class="row">
+                  <div class="col-4">
+                    <ul class="list-unstyled card_list">
+                      <li><span>Features</span></li>
+                      <li>5/3 Floor</li>
+                      <li>200sqm</li>
+                      <li>New Building</li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <ul class="list-unstyled card_list">
+                      <li id="monthly"><span >Monthly</span></li>
+                      <li id="monthly_price"><span >1200 USD</span></li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <ul class="list-unstyled card_list">
+                      <li id="code">
+                        Code: <span> RCEA3248 </span> 
+                      </li>
+                      <li>
+                        <span id="update">
+                          Updated: <span > 14.06.2021 </span>
+                        </span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
+              </div>
 
-                <div class="col-12 d-flex justify-content-md-end">
-                  <a href="#" class="btn btn-warning text-right buy">BUY</a>
-                </div>
+              <div class="col-12 d-flex justify-content-md-end">
+                <a href="#" class="btn btn-warning text-right buy">BUY</a>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="row info_row">
+          <div class="col-12 col-md-6 d-md-flex info_section">
+            <img src="img/appartmentsImg/room 3.jpg" alt="Rooms" />
+          </div>
+
+          <div
+            class="col-12 col-md-6 d-flex align-items-center justify-content-md-center justify-content-start my-3"
+          >
+            <div class="row">
+              <div class="col-12">
+                <h5 class="card_title">Amiryan <span>Yerevan / Centre</span></h5>
+                <div class="row">
+                  <div class="col-4">
+                    <ul class="list-unstyled card_list">
+                      <li><span>Features</span></li>
+                      <li>5/3 Floor</li>
+                      <li>200sqm</li>
+                      <li>New Building</li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <ul class="list-unstyled card_list">
+                      <li id="monthly"><span >Monthly</span></li>
+                      <li id="monthly_price"><span >4300 USD</span></li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <ul class="list-unstyled card_list">
+                      <li id="code">
+                        Code: <span> RCEA3248 </span> 
+                      </li>
+                      <li>
+                        <span id="update">
+                          Updated: <span > 14.06.2021 </span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 d-flex justify-content-md-end">
+                <a href="#" class="btn btn-warning text-right buy">BUY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row info_row">
+          <div class="col-12 col-md-6 d-md-flex info_section">
+            <img src="img/appartmentsImg/room 4.jfif" alt="Rooms" />
+          </div>
+
+          <div
+            class="col-12 col-md-6 d-flex align-items-center justify-content-md-center justify-content-start my-3"
+          >
+            <div class="row">
+              <div class="col-12">
+                <h5 class="card_title">Abovyan <span>Yerevan / Centre</span></h5>
+                <div class="row">
+                  <div class="col-4">
+                    <ul class="list-unstyled card_list">
+                      <li><span>Features</span></li>
+                      <li>5/3 Floor</li>
+                      <li>200sqm</li>
+                      <li>New Building</li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <ul class="list-unstyled card_list">
+                      <li id="monthly"><span >Monthly</span></li>
+                      <li id="monthly_price"><span >1500 USD</span></li>
+                    </ul>
+                  </div>
+                  <div class="col-4">
+                    <ul class="list-unstyled card_list">
+                      <li id="code">
+                        Code: <span> RCEA3248 </span> 
+                      </li>
+                      <li>
+                        <span id="update">
+                          Updated: <span > 14.06.2021 </span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 d-flex justify-content-md-end">
+                <a href="#" class="btn btn-warning text-right buy">BUY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+
+
       </div>
+
+
+      
     </div>
 
     <!-- Main section end  -->
 
-
     <!-- Page footer  -->
     <div class="container-fluid" id="footer">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-2">
             <div class="footer_logo py-5">
               <img src="img/elate logo.png" alt="Logo" />
               <p>Professional Approach</p>
             </div>
-          </div>
-        </div>
+          
+        
 
-        <div class="row">
-          <div class="col-md-6 col-sm-12 d-flex footer_left">
+        <div class="row ">
+          
+          <div class="col-md-6 col-12 d-flex footer_left">
             <div class="col-lg-4 col-md-12">
               <ul class="footer_first_list">
                 <li><span>Tel:</span> 374 10 53 00 73</li>
@@ -488,9 +564,9 @@
           </div>
 
           <div
-            class="col-md-6 col-sm-12 d-flex flex-column justify-content-end align-items-start align-items-lg-end footer-right"
+            class="col-md-6 col-12 d-flex flex-column justify-content-end align-items-start align-items-lg-end "
           >
-            <div class="row footer_social">
+            <div class=" footer_social">
               <ul class="d-flex">
                 <li>
                   <a href="http://#" target="_blank" rel="noopener noreferrer">
@@ -529,10 +605,14 @@
               </ul>
             </div>
 
-            <div class="row allRights">
+            <div class="allRights">
               <p>All rights reserved © 2021 Elate Real Estate</p>
             </div>
           </div>
+
+
+
+
         </div>
       </div>
     </div>
