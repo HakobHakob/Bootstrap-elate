@@ -50,69 +50,64 @@ body {
   background-color: var(--bg-color);
 }
 
-.menu_nav{
-  background-color: var(--pink);
+.menu_nav {
   padding-right: 0;
 }
 
-#menu_list li a{
-  background-color: yellow;
+#menu_list li a {
   padding-right: 0;
 }
-
 
 #menu_list li a:hover {
   color: var(--orange) !important;
 }
 
 /* Main section  */
-.main_row{
-    margin-top: 50px ;
+.main_row {
+  margin-top: 50px;
 }
 
-
-
-.info_div  span{
-    font-size: 20px;
-    font-weight: normal;
+.info_div span {
+  font-size: 20px;
+  font-weight: normal;
 }
 
-.info_div p{
-    color: var(--txt-color);
+.info_div p {
+  color: var(--txt-color);
 }
 
-.monthly{font-weight: bold;
-    margin-bottom: 5px;   
+.monthly {
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.price{
-    font-weight: bold;
-    color: var(--price-color);
+.price {
+  font-weight: bold;
+  color: var(--price-color);
 }
 
- /* Carousel  */
-.big_carousel{
-padding:15px;
+/* Carousel  */
+.big_carousel {
+  padding: 15px;
 }
 
 .carousel-item img {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 /* Map and videos  */
 .map_video_selects {
+
   position: relative;
 }
-.map_video_selects select {
-  appearance: none;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  line-height: 20px;
-  margin: 20px 0;
-  padding: 5px 13px 5px 0;
-  outline: none;
+
+
+.map_video_selects a {
+  color: var(--dark);
+  text-decoration: none;
+  font-size: 13px;
 }
+
 .map_video_selects::after {
   content: "\f0d7";
   font-family: "Font Awesome 5 free";
@@ -120,38 +115,151 @@ padding:15px;
   cursor: pointer;
   margin: 0;
   position: absolute;
-  top: 50%;
-  left:60px ;
+  top: 52%;
+  left: 60px;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-size: 13px;
 }
 
-.shadowed_row{
-  margin-bottom: 50px;
+/* Coolapse  */
+.card-body{
+  padding: 0;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.videoCard iframe{
+  border-radius: 10px;
+}
+
+
+
+
+
+.shadowed_row {
+  padding: 25px 35px;
+  margin: 25px 0;
   box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
   
 }
 
+@media screen and (max-width: 992px) {
+  .shadowed_row {
+    padding: 25px 15px;
+  }
+}
 
-.info-title{
+
+
+
+
+.info_title  {
   font-weight: bold;
   margin-bottom: 15px;
 }
 
-/* .some1{
-  padding : 0 auto;
-} */
+.shadowed_row ul {
+  line-height: 20px;
+  max-width: 100px;
 
-
-/* .some1{
-  margin: 0 10px;
 }
-@media screen and (max-width: 992px) {
-  .some1 {
-    display: none !important;
-  }
+
+
+
+
+
+
+
+
+
+
+
+/* Main section bottom part  */
+/* .call_link{
+  padding: 0 20px;
 } */
+
+.call_link a{  
+  background-color: var(--yellow);
+  color: var(--dark);
+  border-radius: 50px;
+  display: block;
+  padding: 10px 0 10px 30px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 10px;
+  max-width: 150px;
+
+}
+
+@media screen and (max-width: 576px) {
+  .call_link a {
+    font-size: 9px;
+    width: 130px;
+  }
+}
+
+
+
+.call_link a:before{
+  content: "\f232";
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 600;
+  display: block !important;
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  left: 10px;
+  font-size: 13px;
+}
+
+
+.viber{
+  margin-bottom: 20px;
+}
+
+.rent_text,.price_info{
+  margin-bottom: 0;
+  line-height: 20px;
+}
+
+.rent_text{
+  
+  padding: 0 15px;
+}
+
+.price_info{
+  font-weight: bold;
+}
+
+.price_info span{
+  color: var(--price-color) ;
+}
+
+
+.main_section_icon{
+  margin: 12px 0 0 15px;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .main_section_icon{
+   display: none;
+  }
+}
+
+
+
+.price_icon{
+  display: none;
+  margin: 12px 0 0 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .price_icon{
+   display: block;
+  }
+}
 
 
 
@@ -173,7 +281,7 @@ padding:15px;
 #footer li:not(.footer_first_list li):hover {
   color: var(--orange);
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 992px) {
@@ -187,6 +295,10 @@ span {
 
 .footer_social ul {
   margin: 10px 0;
+}
+
+.footer_social  a{
+  text-decoration: none !important;
 }
 
 .footer_social i {
