@@ -214,84 +214,219 @@
     <!-- Map and Video row  -->
 
     <div class="container">
-      <div class="row">
-        <form class="d-flex" action="#">
-          <div class="map_video_selects col-7">
-            <select name="maps">
-              <option value="map">Map</option>
-            </select>
+      <div class="row mb-3">
+        <div class="map_video_selects  col-2 col-md-1">
+          <a
+            class="d-inline mt-3"
+            data-toggle="collapse"
+            href="#collapseMap"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Map
+          </a>
+        </div>
+        <div class="map_video_selects col-1">
+          <a
+            class="d-inline mt-3"
+            data-toggle="collapse"
+            href="#collapseVideo"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Video
+          </a>
+        </div>
+        <div class="col-12">
+          <div class="collapse" id="collapseMap">
+            <div class="card card-body">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.393921636525!2d44.52260701534838!3d40.17804607939344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abcee3fabd121%3A0xfa78d0187ee98811!2zNyBBbGVrIE1hbnVreWFuIFN0LCBZZXJldmFuIDAwNzAsINCQ0YDQvNC10L3QuNGP!5e0!3m2!1sru!2s!4v1646650432296!5m2!1sru!2s"
+                width="100%"
+                height="400"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
           </div>
-          <div class=" map_video_selects col-1">
-            <select name="videos">
-              <option value="video">Video</option>
-            </select>
+          <div class="collapse " id="collapseVideo">
+            <div class="card card-body videoCard">
+              <iframe
+                width="100%"
+                height="400"
+                src="https://www.youtube.com/embed/2JMMnNOhDoc"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
-        </form>
+        </div>
       </div>
-
-      <!-- <div class="row">
-        <iframe
-          class="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.3939216365065!2d44.52260701525011!3d40.178046079393695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abcee3fabd121%3A0xfa78d0187ee98811!2zNyDUsdWs1aXWhCDVhNWh1bbVuNaC1a_VtdWh1bYg1oPVuNWy1bjWgSwg1LXWgNaH1aHVtiAwMDcwLCDVgNWh1bXVodW91b_VodW2!5e0!3m2!1shy!2s!4v1647329395534!5m2!1shy!2s"
-          width="100%"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
-      </div>
-      <div class="row">
-        <iframe
-          class="video"
-          width="100%"
-          height="450"
-          src="https://www.youtube.com/embed/GV92IdMGFfA"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div> -->
     </div>
 
     <!-- Main section bottom  -->
-    <div class="container shadowed_row">
-      <div class="bg-warning info-title  col-4 col-md-3 d-flex justify-content-md-center align-items-center">Features</div>
-      
+    <div class="container">
+      <div class="shadowed_row">
+        <div class="row px-lg-5">
+          <div class="info_title col-12">Features</div>
+
+          <div class="col-12">
+            <div class="row justify-content-between">
+              <div class="col-md-2 col-12 col-sm-5">
+                <ul class="list-unstyled">
+                  <li>New Repaired</li>
+                  <li>Partly Furnished</li>
+                  <li>Monolith Building</li>
+                  <li>Open Balcony</li>
+                  <li>Street View</li>
+                </ul>
+              </div>
+
+              <div class="col-md-2 col-12 col-sm-5">
+                <ul class="list-unstyled">
+                  <li>1.5 bathrooms</li>
+                  <li>Air Conditioners</li>
+                  <li>Centralized Heating System</li>
+                </ul>
+              </div>
+
+              <div class="col-md-2 col-12 col-sm-5">
+                <ul class="list-unstyled">
+                  <li>Euro Windows</li>
+                  <li>Wooden doors</li>
+                  <li>Parquet Floor</li>
+                  <li>Double Curtains</li>
+                </ul>
+              </div>
+              <div class="col-md-2 col-12 col-sm-5">
+                <ul class="list-unstyled">
+                  <li>New Elevator</li>
+                  <li>Street Entrance</li>
+                  <li>Security Guards</li>
+                  <li>Underground Parking</li>
+                  <li>Daily Garbage Pick Up</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="shadowed_row">
+        <div class="row px-lg-5">
+          <p class="info_title col-12">Available</p>
+
+          <div class="col-12">
+            <div class="row justify-content-between">
+              <div class="col-md-2 col-12 col-sm-5">
+                <ul class="list-unstyled">
+                  <li>TV</li>
+                  <li>Cable TV</li>
+                  <li>WiFi Internet</li>
+                </ul>
+              </div>
+              <div class="col-md-2 col-12 col-sm-5">
+                <ul class="list-unstyled">
+                  <li>Kitchen Furniture</li>
+                  <li>Build In Cabinets</li>
+                </ul>
+              </div>
+              <div class="col-md-2 col-12 col-sm-5">
+                <ul class="list-unstyled">
+                  <li>Refrigerator</li>
+                  <li>Kitchen Appliances</li>
+                </ul>
+              </div>
+              <div class="col-md-2 col-12 col-sm-5">
+                <ul class="list-unstyled">
+                  <li>Shower Cabin</li>
+                  <li>Bathtub</li>
+                  <li>Jacuzzi</li>
+                  <li>Washing Machine</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main section bottom part  -->
+
+    <div class="container mb-5">
       <div class="row ">
-            <div class="info_section bg-info  col-4 col-md-3 d-flex mx-auto">
-              <ul class="some1 list-unstyled bg-danger ">
-                <li>New Repaired</li>
-                <li>Partly Furnished</li>
-                <li>Monolith Building</li>
-                <li>Open Balcony</li>
-                <li>Street View</li>
+        <div class=" pr-3 col-4 col-md-3 col-lg-2 call_link">
+          <div class="viber col-12 mx-auto px-0">
+            <a href="http://#">VIBER CALL</a>
+          </div>
+          <div class="col-12 mx-auto px-0">
+            <a href="http://#">WHATSAPP CALL</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-7 order-3 order-md-2">
+          <div class="row flex-column mt-3 mt-md-0">
+            <p class="rent_text">
+              10% Income Tax, Utilities are not included in price.
+            </p>
+            <p class="rent_text">Deposit is required. * Agency fee applies</p>
+          </div>
+          <div class="row">
+            <div class="footer_social main_section_icon">
+              <ul class="d-flex list-unstyled">
+                <li>
+                  <a href="http://#" target="_blank" rel="noopener noreferrer">
+                    <i
+                      class="fa-brands fa-facebook-f"
+                      id="fb"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://#" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
               </ul>
             </div>
-            <div class="col-6 col-md-3  d-flex justify-content-md-end">
-              <ul class="list-unstyled ">
-                <li>1.5 bathrooms</li>
-                <li>Air Conditioners</li>
-                <li>Centralized Heating System</li>
+          </div>
+        </div>
+
+        <div class=" ml-1 ml-sm-0 col-7 col-sm-8 col-md-2 col-lg-3 order-2 order-md-3   text-md-right">
+          
+          <div class="row">
+            
+          </div>
+          
+          <p class="price_info">Monthly</p>
+          <p class="price_info"><span>2900 USD</span></p>
+          <div class="row">
+            <div class="footer_social price_icon">
+              <ul class="d-flex list-unstyled">
+                <li>
+                  <a href="http://#" target="_blank" rel="noopener noreferrer">
+                    <i
+                      class="fa-brands fa-facebook-f"
+                      id="fb"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://#" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
               </ul>
             </div>
-            <div class="col-4 col-md-3  d-flex justify-content-md-end">
-              <ul class="list-unstyled">
-                <li>Euro Windows</li>
-                <li>Wooden doors</li>
-                <li>Parquet Floor</li>
-                <li>Double Curtains</li>
-              </ul>
-            </div>
-            <div class="col-6 col-md-3  d-flex justify-content-md-end">
-              <ul class="list-unstyled">
-                <li>New Elevator</li>
-                <li>Street Entrance</li>
-                <li>Security Guards</li>
-                <li>Underground Parking</li>
-                <li>Daily Garbage Pick Up</li>
-              </ul>
-            </div>
+          </div>
+        </div>
       </div>
     </div>
 
